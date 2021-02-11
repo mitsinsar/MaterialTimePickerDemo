@@ -1,0 +1,100 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MaterialTimePicker" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/pink</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="materialTimePickerTheme">@style/MaterialTimePickerStyle</item>
+    </style>
+
+    <style name="MaterialTimePickerStyle" parent="ThemeOverlay.MaterialComponents.TimePicker">
+        <item name="chipStyle">@style/MaterialTimePickerChipStyle</item>
+        <item name="materialClockStyle">@style/MaterialTimePickerClockStyle</item>
+        <item name="imageButtonStyle">@style/MaterialTimePickerImageButtonStyle</item>
+        <item name="materialButtonOutlinedStyle">@style/MaterialTimePickerButtonOutlinedStyle</item>
+        <item name="textAppearanceOverline">@style/MaterialTimePickerTextAppearanceOverlineStyle</item>
+        <item name="colorPrimary">@color/purple_8B</item>
+        <item name="android:textColorPrimary">@color/purple_8B</item>
+    </style>
+
+    <style name="MaterialTimePickerChipStyle" parent="Widget.MaterialComponents.TimePicker.Display">
+        <item name="chipBackgroundColor">@color/selector_time_picker_chip_background</item>
+        <item name="rippleColor">@color/selector_time_picker_chip_background</item>
+        <item name="android:textColor">@color/selector_time_picker_chip_text</item>
+        <item name="android:textAppearance">@style/MaterialTimePickerChipTextAppearance</item>
+        <item name="shapeAppearanceOverlay">@style/MaterialTimePickerChipShapeAppearanceStyle</item>
+        <item name="materialThemeOverlay">@style/MaterialTimePickerChipMaterialThemeOverlay</item>
+    </style>
+
+    <style name="MaterialTimePickerChipShapeAppearanceStyle">
+        <item name="cornerSize">20%</item>
+    </style>
+
+    <style name="MaterialTimePickerChipMaterialThemeOverlay">
+        <item name="elevationOverlayEnabled">false</item>
+    </style>
+
+    <style name="MaterialTimePickerChipTextAppearance" parent="TextAppearance.AppCompat.Body1">
+        <item name="fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="MaterialTimePickerClockStyle" parent="Widget.MaterialComponents.TimePicker.Clock">
+        <item name="clockFaceBackgroundColor">@color/purple_CB</item>
+        <item name="clockHandColor">@color/purple_8B</item>
+        <item name="clockNumberTextColor">@color/selector_time_picker_clock_text</item>
+    </style>
+
+    <style name="MaterialTimePickerImageButtonStyle" parent="Widget.MaterialComponents.TimePicker.ImageButton">
+        <item name="iconTint">@color/purple_8B</item>
+        <item name="rippleColor">@color/purple_CB</item>
+        <item name="shapeAppearance">@style/MaterialTimePickerImageButtonShapeAppearance</item>
+    </style>
+
+    <style name="MaterialTimePickerImageButtonShapeAppearance" parent="">
+        <item name="cornerSize">50%</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="MaterialTimePickerButtonOutlinedStyle" parent="Widget.MaterialComponents.TimePicker.Button">
+        <item name="backgroundTint">@color/selector_time_picker_button_outlined_background</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textAppearance">@style/MaterialTimePickerButtonOutlinedTextAppearance</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/selector_time_picker_button_outlined_text</item>
+        <item name="android:textAlignment">center</item>
+        <item name="strokeColor">@color/purple_8B</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="MaterialTimePickerButtonOutlinedTextAppearance" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="MaterialTimePickerTextAppearanceOverlineStyle" parent="TextAppearance.MaterialComponents.TimePicker.Title">
+        <item name="android:textColor">@color/purple_8B</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.166666667</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+
+    <style name="MaterialTimePickerButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/selector_time_picker_button_text</item>
+    </style>
+
+</resources>
